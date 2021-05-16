@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Sass/style.css">
+    <script src="./Js/main.js" type="module"></script>
+    <title>SearchMe</title>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red exclaim">!</span>
+            </div>
+            <form action="" id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">Enter a search term or phrase</label>
+                <input type="text" autocomplete="off" id="search">
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fas fa-search blue"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+                <!-- <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Lorem Ipsum</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Short-haired-Dachshund.jpg/330px-Short-haired-Dachshund.jpg" alt="">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna ipsum, consequat non metus ac, auctor commodo neque. Etiam scelerisque turpis id eros scelerisque dapibus. Phasellus euismod ante a quam faucibus, eu porttitor massa aliquam. Nullam id mi fringilla, vulputate tortor id, accumsan mi. Nunc commodo felis interdum nisl imperdiet pharetra. Suspendisse sollicitudin augue et fermentum elementum. In hac habitasse platea dictumst.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered By <a href="" target="_blank">Wikipedia</a><span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+</html>

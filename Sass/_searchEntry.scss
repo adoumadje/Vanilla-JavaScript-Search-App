@@ -1,0 +1,94 @@
+.searchEntry{
+    @include flexColumn;
+    padding-top: 40px;
+    
+    .logo{
+        letter-spacing: -5px;
+        font-size: 2rem;
+        font-weight: 600;
+        @include mq(768px){
+            font-size: 4rem;
+            letter-spacing: -10px;
+        }
+    }
+
+    .searchBar{
+        display: flex;
+        width: 90vw;
+        border: 2px solid $search-bar-border;
+        border-radius: 500px;
+        padding: 0.15rem 0.25rem 0.15rem 0.75rem;
+        @include mq(768px){
+            width: 80vw;
+            padding: 1.25rem 1.5rem;
+        }
+
+        input[type=text]{
+            flex-grow: 1;
+            border: 0;
+            outline: none;
+            font-size: 0.75rem;
+            text-align: left;
+            letter-spacing: 0.1rem;
+            min-width: 150px;
+            @include mq(768px){
+                font-size: 1.25rem;
+            }
+        }
+
+        .button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            min-width: 48px;
+            min-height: 48px;
+
+            i{
+                font-size: 1rem;
+                @include mq(768px){
+                    font-size: 1.5rem;
+                }
+            }
+
+            &:hover,&:focus{
+                i{
+                    padding-bottom: 0.5rem;
+                    border-bottom: 1px solid $search-bar-border;
+                }
+            }
+        }
+
+        .searchButton:hover,.searchButton:focus{
+            i{
+                color: $logo-green;
+            }
+        }
+
+        .clear:hover,.clear:focus{
+            i{
+                color: $logo-red;
+            }
+        }
+
+        .searchButton{
+            @include mq(768px){
+                padding-left: 1rem;
+            }
+        }
+
+        .clear{
+            justify-content: center;
+            align-items: center;
+            color: $stats-color;
+            border-right: thin solid $clear-button-color;
+            @include mq(768px){
+                padding: 0 1rem;
+            }
+        }
+
+        &:hover,&:focus-within{
+            box-shadow: 0 2px 5px 2px $search-bar-border;
+        }
+    }
+}
